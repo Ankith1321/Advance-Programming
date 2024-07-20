@@ -106,9 +106,7 @@ The aim of this exercise is to provide hands-on learning experience with Python 
   10. Developing Real-world Applications:
 
      Objective: Implement applications that simulate real-world tasks, such as word counting, data analysis, and web scraping.
-
-
-     Benefit: Prepares learners for practical, real-world programming challenges and projects.
+      Benefit: Prepares learners for practical, real-world programming challenges and projects.
 
  # Word Count Exercise:
 
@@ -130,3 +128,6 @@ The aim of this exercise is to provide hands-on learning experience with Python 
 
     update commit messages regurally.
 
+# installation instructions
+  
+   At first download the Google python exercise from the internet and then add it to the github repository. commit the messages within the repository and update the repository.
