@@ -128,5 +128,5 @@ The aim of this exercise is to provide hands-on learning experience with Python 
 
     complete the remaining task in the near futhure.
 
-    update cpmmit messages regurally.
+    update commit messages regurally.
 
