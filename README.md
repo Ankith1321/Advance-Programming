@@ -98,8 +98,6 @@ The aim of this exercise is to provide hands-on learning experience with Python 
 
 
    9. Working with Collections and Iterables:
-
-
      Objective: Manipulate and iterate through collections like lists, sets, and dictionaries.
 
 
@@ -132,5 +130,4 @@ The aim of this exercise is to provide hands-on learning experience with Python 
     complete the remaining task in the near futhure.
 
     update cpmmit messages regurally.
-    
-     
+
