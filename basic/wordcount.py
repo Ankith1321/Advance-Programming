@@ -49,20 +49,55 @@ import sys
 
 # This basic command line argument parsing code is provided and
 # calls the print_words() and print_top() functions which you must define.
-def main():
-  if len(sys.argv) != 3:
-    print('usage: ./wordcount.py {--count | --topcount} file')
-    sys.exit(1)
 
-  option = sys.argv[1]
-  filename = sys.argv[2]
-  if option == '--count':
-    print_words(filename)
-  elif option == '--topcount':
-    print_top(filename)
-  else:
-    print('unknown option: ' + option)
-    sys.exit(1)
+
+import sys
+from collections import Counter
+
+# Function to build a word count dictionary from a file
+def build_word_count_dict(filename):
+    with open(filename, 'r', encoding='utf-8') as f:
+        text = f.read().lower()
+        words = text.split()
+        # Removing punctuation (basic approach)
+        words = [word.strip('.,!?;:"\'') for word in words]
+        word_count = Counter(words)
+    return word_count
+
+# Define print_words(filename) to print word counts sorted by word.
+def print_words(filename):
+    word_count = build_word_count_dict(filename)
+    for word in sorted(word_count.keys()):
+        print(f'{word} {word_count[word]}')
+
+# Define print_top(filename) to print top 20 word counts sorted by frequency.
+def print_top(filename):
+    word_count = build_word_count_dict(filename)
+    for word, count in word_count.most_common(20):
+        print(f'{word} {count}')
+
+# Function to be called within the notebook
+def wordcount(option, filename):
+    if option == '--count':
+        print_words(filename)
+    elif option == '--topcount':
+        print_top(filename)
+    else:
+        print('Unknown option: ' + option)
+
+# Main function to handle command-line arguments
+def main():
+    if len(sys.argv) != 3:
+        print('Usage: python wordcount.py {--count | --topcount} file')
+        sys.exit(1)
+
+    option = sys.argv[1]
+    filename = sys.argv[2]
+
+    wordcount(option, filename)
 
 if __name__ == '__main__':
-  main()
+    main()
+
+
+
