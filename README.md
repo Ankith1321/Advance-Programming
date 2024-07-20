@@ -6,10 +6,10 @@ The aim of this exercise is to provide hands-on learning experience with Python 
 
 # Course Details
 
- ** course: Advanced Programming**
- Program: Master of Engineering in AI for Smart Sensors and Actuators
- Institution: Technische Hochschule Deggendorf
- Instructor: Tobias Schaffer
+ **course: Advanced Programming**
+ **Program: Master of Engineering in AI for Smart Sensors and Actuators**
+ // Institution: Technische Hochschule Deggendorf //
+ **Instructor: Tobias Schaffer**
 
  # Repository Structure
 
