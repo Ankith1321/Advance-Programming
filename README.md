@@ -21,7 +21,8 @@ The aim of this exercise is to provide hands-on learning experience with Python 
 
 # Requirements
  **Python version: 3.x.x**
-  **Libraries used**
+  
+**Libraries used**
     1.pandas==1.3.3
 
     2.scikit-learn==0.24.2
