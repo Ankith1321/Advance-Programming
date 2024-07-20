@@ -97,10 +97,9 @@ The aim of this exercise is to provide hands-on learning experience with Python 
      Benefit: Improves the ability to identify and fix errors, leading to more robust and error-free code.
 
 
-   9. Working with Collections and Iterables:
+  9. Working with Collections and Iterables:
+    
      Objective: Manipulate and iterate through collections like lists, sets, and dictionaries.
-
-
      Benefit: Provides hands-on experience with common data manipulation tasks, making it easier to handle data in various formats.
 
 
